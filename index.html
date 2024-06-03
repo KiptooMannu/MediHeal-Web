@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mediheal Hospitall</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Login Form -->
+    <section id="login" class="page active">
+        <div class="container">
+            <h2>Login</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn">Login</button>
+            </form>
+            <div id="login-message"></div>
+        </div>
+    </section>
+
+    <!-- Dashboard -->
+    <section id="dashboard" class="page">
+        <header>
+            <nav>
+                <div class="nav-brand">Mediheal Hospital</div>
+                <ul class="navbar">
+                    <li><a href="#home" class="nav-link" data-section="home">Home</a></li>
+                    <li><a href="#services" class="nav-link" data-section="services">Services</a></li>
+                    <li><a href="#contacts" class="nav-link" data-section="contacts">Contacts</a></li>
+                    <li><a href="#location" class="nav-link" data-section="location">Location</a></li>
+                    <li><a href="#appointments" class="nav-link" data-section="appointments">Appointments</a></li>
+                    <li><a href="#lab-services" class="nav-link" data-section="lab-services">Lab Services</a></li>
+                    <li><a href="#doctors-remarks" class="nav-link" data-section="doctors-remarks">Doctors' Remarks</a></li>
+                    <li><a href="#lab-notes" class="nav-link" data-section="lab-notes">Lab Notes</a></li>
+                    <li><a href="#" id="logout-link">Logout</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="home" class="dashboard-section active">
+                <div class="container">
+                    <h2>Welcome to Mediheal Hospital</h2>
+                    <p>At Mediheal Hospital, we are dedicated to providing top-quality healthcare services to our community.</p>
+                    <p>Meditest offers a unique team-based treatment approach, in which a whole team of specialists, faculty, and staff work together to provide the finest possible care for you and your family. We are committed to working to ensure that you and your loved ones receive great medical care, first-rate facilities, and compassionate care. We aim to provide comprehensive healthcare while remaining affordable – all in a nationwide network of medical facilities. Find out if we offer treatment at your local facility via this website.</p>
+                    <a href="https://example.com/about-us" target="_blank" class="btn">Read More</a>
+                </div>
+            </section>
+            <section id="services" class="dashboard-section">
+                <div class="container">
+                    <h2>Services</h2>
+                    <div class="services-grid">
+                        <div class="service-item"><a href="https://example.com/consultation" target="_blank">Consultation</a></div>
+                        <div class="service-item"><a href="https://example.com/laboratory" target="_blank">Laboratory/ Pathology</a></div>
+                        <div class="service-item"><a href="https://example.com/covid-19-testing" target="_blank">Covid-19 Testing</a></div>
+                        <div class="service-item"><a href="https://example.com/oncology" target="_blank">Oncology</a></div>
+                        <div class="service-item"><a href="https://example.com/urology" target="_blank">Urology</a></div>
+                        <div class="service-item"><a href="https://example.com/gynaecology" target="_blank">Gynaecology Clinic</a></div>
+                        <div class="service-item"><a href="https://example.com/dental" target="_blank">Dental Clinic</a></div>
+                        <div class="service-item"><a href="https://example.com/home-sample" target="_blank">Home Sample Collection</a></div>
+                        <div class="service-item"><a href="https://example.com/pediatric" target="_blank">Pediatric Clinic</a></div>
+                        <div class="service-item"><a href="https://example.com/home-health" target="_blank">Home Health Care</a></div>
+                        <div class="service-item"><a href="https://example.com/eye-specialist" target="_blank">Eye Specialist Clinic</a></div>
+                        <div class="service-item"><a href="https://example.com/surgical" target="_blank">Surgical Department</a></div>
+                        <div class="service-item"><a href="https://example.com/radiology" target="_blank">Radiology</a></div>
+                        <div class="service-item"><a href="https://example.com/wellness" target="_blank">Wellness Clinic</a></div>
+                        <div class="service-item"><a href="https://example.com/pharmacy" target="_blank">Pharmacy</a></div>
+                    </div>
+                </div>
+            </section>
+  
+            <section id="location" class="dashboard-section">
+                <div class="container">
+                    <h2>Location</h2>
+                    <p>Location information will go here.</p>
+                </div>
+            </section>
+            <section id="appointments" class="dashboard-section">
+                <div class="container">
+                    <h2>Appointments</h2>
+                    <form id="appointment-form">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Date:</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="appointment-type">Appointment Type:</label>
+                            <select id="appointment-type" name="appointment-type" required>
+                                <option value="consultation">Consultation</option>
+                                <option value="checkup">Check-up</option>
+                                <option value="followup">Follow-up</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn">Book Appointment</button>
+                    </form>
+                </div>
+            </section>
+            <section id="lab-services" class="dashboard-section">
+                <div class="container">
+                    <h2>Lab Services</h2>
+                    <p>Information about lab services will go here.</p>
+                    <div class="form-group">
+                        <label for="lab-test-name">Lab Test Name:</label>
+                        <input type="text" id="lab-test-name" name="lab-test-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lab-results">Lab Results:</label>
+                        <textarea id="lab-results" name="lab-results" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Submit Lab Results</button>
+                </div>
+            </section>
+            <section id="doctors-remarks" class="dashboard-section">
+                <div class="container">
+                    <h2>Doctors' Remarks</h2>
+                    <div class="form-group">
+                        <label for="doctor-name">Doctor's Name:</label>
+                        <input type="text" id="doctor-name" name="doctor-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="doctor-remarks">
+                            
+Doctor's Remarks:</label>
+<textarea id="doctor-remarks" name="doctor-remarks" required></textarea>
+</div>
+<button type="submit" class="btn">Submit Doctor's Remarks</button>
+</div>
+</section>
+<section id="lab-notes" class="dashboard-section">
+<div class="container">
+<h2>Lab Notes</h2>
+<div class="form-group">
+<label for="lab-notes">Lab Notes:</label>
+<textarea id="lab-notes" name="lab-notes" required></textarea>
+</div>
+<button type="submit" class="btn">Submit Lab Notes</button>
+</div>
+</section>
+
+<section id="contacts" class="dashboard-section">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="contact-name">Name:</label>
+                <input type="text" id="contact-name" name="contact-name" required>
+            </div>
+            <div class="form-group">
+                <label for="contact-email">Email:</label>
+                <input type="email" id="contact-email" name="contact-email" required>
+            </div>
+            <div class="form-group">
+                <label for="contact-message">Message:</label>
+                <textarea id="contact-message" name="contact-message" required></textarea>
+            </div>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+</section>
+</main>
+<footer>
+<div class="container">
+<p>© 2024 Mediheal Hospital. All Rights Reserved.</p>
+</div>
+</footer>
+</section>
+<script src="script.js"></script>
+
+</body>
+</html>
